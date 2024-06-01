@@ -25,9 +25,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/aurora-pack.min.css",
+              "src/assets/css/aurora-theme-base.min.css",
+              "src/assets/css/urku.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/svg4everybody.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -91,5 +96,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

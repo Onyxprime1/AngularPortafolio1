@@ -2,12 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Portafolio</title>
+  <title>SAWOK.NET</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<!--link rel="icon" type="image/svg+xml" href="assets/img/urku-ico.svg"-->
+  <link rel="stylesheet" href="assets/css/aurora-pack.min.css">
+  <link rel="stylesheet" href="assets/css/aurora-theme-base.min.css">
+  <link rel="stylesheet" href="assets/css/urku.css">
+
+  <style>
+    /* Asegúrate de que el contenedor de partículas ocupe toda la pantalla */
+    #particles-js {
+      position: fixed; /* Cambiado a fixed para que ocupe solo el área visible */
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1; /* Coloca el fondo de partículas detrás del contenido */
+    }
+    /* Asegúrate de que el body no tenga margen para que las partículas cubran toda la página */
+    
+  </style> 
+  
+  <style>
+    .pic-1 img, .pic-2 img {
+      max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+      max-height: 830px; /* Ajusta este valor según lo necesario */
+      width: auto; /* Mantiene la proporción original de la imagen */
+      height: auto; /* Mantiene la proporción original de la imagen */
+    }
+  </style>
+
+<style>
+  .pic-3 header{
+    max-width: 808px; /* Asegura que la imagen no exceda el ancho del contenedor */
+    max-height: 1070px; /* Ajusta este valor según lo necesario */
+    width: auto; /* Mantiene la proporción original de la imagen */
+    height: auto; /* Mantiene la proporción original de la imagen */
+  }
+</style>
+
 </head>
-<body>
-  <app-root></app-root>
+<body class="top-fixed" >
+
+<!--*******************************************************************************************************************************-->
+  <div id="particles-js"></div>
+  
+  <app-root ></app-root>
+
+
+
+<!--*******************************************************************************************************************************-->
+  <script src="assets/js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- CDN de particles.js -->
+
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 160, density: { enable: true, value_area: 800 } },
+        color: { value: "#d41414" },
+        shape: {
+          type: "circle",
+          stroke: { width: 0, color: "#000000" },
+          polygon: { nb_sides: 5 },
+          image: { src: "img/github.svg", width: 100, height: 100 }
+        },
+        opacity: {
+          value: 0.3,
+          random: true,
+          anim: { enable: true, speed: 1, opacity_min: 0, sync: false }
+        },
+        size: {
+          value: 10,
+          random: true,
+          anim: { enable: false, speed: 4, size_min: 0.3, sync: false }
+        },
+        line_linked: {
+          enable: false,
+          distance: 150,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 1,
+          direction: "none",
+          random: true,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: { enable: false, rotateX: 600, rotateY: 600 }
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "bubble" },
+          onclick: { enable: true, mode: "repulse" },
+          resize: true
+        },
+        modes: {
+          grab: { distance: 400, line_linked: { opacity: 1 } },
+          bubble: { distance: 250, size: 0, duration: 2, opacity: 0, speed: 3 },
+          repulse: { distance: 400, duration: 0.4 },
+          push: { particles_nb: 4 },
+          remove: { particles_nb: 2 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+
+<!-- Google Maps API ***********************************************************************************************************************-->
+
+  
 </body>
 </html>

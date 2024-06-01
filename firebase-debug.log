@@ -1,0 +1,21 @@
+[debug] [2024-06-01T05:51:49.307Z] ----------------------------------------------------------------------
+[debug] [2024-06-01T05:51:49.309Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kevin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2024-06-01T05:51:49.310Z] CLI Version:   13.10.2
+[debug] [2024-06-01T05:51:49.310Z] Platform:      win32
+[debug] [2024-06-01T05:51:49.310Z] Node Version:  v20.13.1
+[debug] [2024-06-01T05:51:49.310Z] Time:          Fri May 31 2024 23:51:49 GMT-0600 (hora estándar central)
+[debug] [2024-06-01T05:51:49.310Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-01T05:51:49.315Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-01T05:51:49.315Z] > authorizing via signed-in user (kevinpinedagots@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\kevin\Desktop\temple\portafolio1\portafolio
+
